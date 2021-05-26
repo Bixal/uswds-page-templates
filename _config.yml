@@ -2,7 +2,7 @@
 title: USWDS Page Templates
 
 # Write a short description for the site. This is used for "meta description."
-description: A showcase of page templates using the U.S. Web Design System for both web and Figma
+description: A library of page templates using the U.S. Web Design System for both web and Figma
 
 # Set the language for the site. Used for "html lang." Default is English.
 lang: en
