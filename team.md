@@ -27,6 +27,8 @@ members:
     - name: Isabel Guzman
       title: Administrator of the Small Business Administration
       image: https://www.whitehouse.gov/wp-content/uploads/2021/01/Isabel_Guzman.jpg
+source-domain: whitehouse.gov
+source-url: https://www.whitehouse.gov/administration/cabinet/
 ---
 
 The Cabinet’s role is to advise the President on any subject he or she may require relating to the duties of each member’s respective office.
