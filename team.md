@@ -5,28 +5,28 @@ description: Key team members with name, email, and a feature photo
 members:
     - name: Marcia Fudge
       title: Secretary of Housing and Urban Development
-      image: https://www.whitehouse.gov/wp-content/uploads/2021/01/Marcia_Fudge.jpg
+      image: https://bixal.github.io/rrt-content/assets/img/Marcia_Fudge.jpeg
     - name: Pete Buttigieg
       title: Secretary of Transportation
-      image: https://www.whitehouse.gov/wp-content/uploads/2021/01/Pete_Buttigieg.jpg
+      image: https://bixal.github.io/rrt-content/assets/img/Pete_Buttigieg.jpeg
     - name: Alejandro Mayorkas
       title: Secretary of Homeland Security
-      image: https://www.whitehouse.gov/wp-content/uploads/2021/01/Alejandro_Mayorkas.jpg
+      image: https://bixal.github.io/rrt-content/assets/img/Alejandro_Mayorkas.jpeg
     - name: Michael Regan
       title: Administrator of the Environmental Protection Agency
-      image: https://www.whitehouse.gov/wp-content/uploads/2021/01/Michael_Regan.jpg
+      image: https://bixal.github.io/rrt-content/assets/img/Michael_Regan.jpeg
     - name: Katherine Tai
       title: United States Trade Representative
-      image: https://www.whitehouse.gov/wp-content/uploads/2021/01/Katherine_Tai.jpg
+      image: https://bixal.github.io/rrt-content/assets/img/Katherine_Tai.jpeg
     - name: Linda Thomas-Greenfield
       title: United States Ambassador to the United Nations
-      image: https://www.whitehouse.gov/wp-content/uploads/2021/01/Linda_Thomas-Greenfield.jpg
+      image: https://bixal.github.io/rrt-content/assets/img/Linda_Thomas-Greenfield.jpeg
     - name: Dr. Cecilia Rouse
       title: Chair of the Council of Economic Advisers
-      image: https://www.whitehouse.gov/wp-content/uploads/2021/01/Cecilia_Rouse.jpg
+      image: https://bixal.github.io/rrt-content/assets/img/Cecilia_Rouse.jpeg
     - name: Isabel Guzman
       title: Administrator of the Small Business Administration
-      image: https://www.whitehouse.gov/wp-content/uploads/2021/01/Isabel_Guzman.jpg
+      image: https://bixal.github.io/rrt-content/assets/img/Isabel_Guzman.jpeg
 source-domain: whitehouse.gov
 source-url: https://www.whitehouse.gov/administration/cabinet/
 ---
