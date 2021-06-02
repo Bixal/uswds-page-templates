@@ -1,0 +1,26 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+  {% include header-extended.html %}
+
+  <main id="main-content">
+    <div class="grid-container padding-y-2">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+      <div class="grid-row grid-gap">
+        {% for member in page.members %}
+        <div class="mobile-lg:grid-col-6 tablet:grid-col-4 margin-bottom-3 padding-1">
+          <img src="{{ member.image }}" alt="Portrait of {{ member.name }}" class="radius-lg">
+          <h2 class="margin-bottom-0 margin-y-1">{{ member.name }}</h2>
+          <p class="margin-top-0">{{ member.title }}</p> 
+        </div>
+        {% endfor %}
+      </div>
+      <p>Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</a></p>
+    </div>
+  </main>
+
+  {% include footer.html %}
+  {% include foot.html %}
