@@ -29,6 +29,11 @@ members:
       image: https://bixal.github.io/rrt-content/assets/img/Isabel_Guzman.jpeg
 source-domain: whitehouse.gov
 source-url: https://www.whitehouse.gov/administration/cabinet/
+breadcrumbs:
+  - name: Agency
+    url: agency.html
+  - name: Leadership
+    url: about-us/leadership.html
 ---
 
 The Cabinet’s role is to advise the President on any subject he or she may require relating to the duties of each member’s respective office.
