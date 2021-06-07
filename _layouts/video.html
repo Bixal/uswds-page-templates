@@ -1,0 +1,22 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+  {% include header-extended.html %}
+
+  <main id="main-content">
+    <div class="grid-container padding-y-2">
+        {% include breadcrumb.html %}
+        <h1>{{ page.title }}</h1>
+        <div class="iframe-container">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/{{ page.youtube-id }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="text-base">{{ page.publish-date }}</p>
+        {{ content }}
+        <p>Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</a></p>
+    </div>
+  </main>
+
+  {% include footer.html %}
+  {% include foot.html %}
