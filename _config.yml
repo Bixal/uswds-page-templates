@@ -15,3 +15,9 @@ github: [metadata]
 
 # Enable for live hosting on GitHub Pages
 baseurl: /uswds-page-templates
+
+# Define content collections
+collections:
+  ssa-faqs:
+    output: true
+    # source: https://faq.ssa.gov/en-US/
