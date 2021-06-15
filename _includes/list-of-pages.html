@@ -1,6 +1,9 @@
 <p>Pages in repo:</p>
 <ul>
     {% for page in site.pages %}
-    <li><a href="{{ site.baseurl }}{{ page.url }}" class="usa-link">{{ page.title }}</a></li>
+        {% if page.template-title %}
+        <li><a href="{{ site.baseurl }}{{ page.url }}" class="usa-link">{{ page.template-title }}</a><br> {{ page.template-description }}</li>
+        {% endif %}
     {% endfor %}
+    
 </ul>

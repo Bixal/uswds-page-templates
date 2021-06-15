@@ -1,5 +1,7 @@
 ---
 layout: faq
+template-title: FAQ
+template-description: List of frequently asked questions and their responses
 title: FAQ
 description: List of frequently asked questions and their responses
 source-domain: ssa.gov

@@ -1,5 +1,7 @@
 ---
 layout: team
+template-title: Team
+template-description: Key team members with name, email, and a feature photo
 title: Team
 description: Key team members with name, email, and a feature photo
 members:
