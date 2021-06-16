@@ -1,0 +1,29 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+    {% include header-extended.html %}
+
+    <main id="main-content">
+        <section class="usa-section" style="background-image:url(https://raw.githubusercontent.com/Bixal/rrt-content/main/assets/img/bio.jpg)">
+            <div class="grid-container">
+                <h1 class="font-heading-3xl text-base-lightest">{{ page.title }}</h1>
+            </div>
+        </section>
+        <div class="grid-container">
+            {% include breadcrumb.html %}
+            <div class="grid-row grid-gap">
+                <div class="tablet:grid-col-5 margin-bottom-4">
+                    <img src="{{ page.profile-image }}" alt="{{ page.profile-image-alt }}">
+                </div>
+                <div class="tablet:grid-col-7">
+                    {{ content }}
+                </div>
+            </div>
+            <p>Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</a></p>
+        </div>
+    </main>
+
+    {% include footer.html %}
+    {% include foot.html %}
