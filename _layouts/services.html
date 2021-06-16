@@ -1,0 +1,48 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+  {% include header-extended.html %}
+
+  <main id="main-content">
+    <div class="grid-container padding-y-2">
+      {% include breadcrumb.html %}
+      <h1>{{ page.title }}</h1>
+      <p class="usa-intro">{{ page.description }}</p>
+      {{ content }}
+      <div class="grid-row grid-gap">
+        <ul class="usa-card-group">
+        {% for service in page.services %}
+          <li class="tablet:grid-col-6 usa-card">
+            <div class="usa-card__container">
+              <header class="usa-card__header">
+                <h2 class="usa-card__heading">{{ service.name }}</h2>
+              </header>
+              <div class="usa-card__media usa-card__media--inset">
+                <div class="usa-card__img bg-white">
+                  <img src="{{ service.image }}" alt="Logo for {{ service.name }}" class="maxw-10 radius-pill">
+                </div>
+              </div>
+              <div class="usa-card__body">
+                <p>{{ service.description }}</p>
+              </div>
+              <div class="usa-card__footer">
+                <p>
+                  {% for item in service.labels %}
+                  <span class="usa-tag text-no-wrap">{{ item.name }}</span>
+                  {% endfor %}
+                </p>
+                <a href="{{ service.url }} "class="usa-button">{{ service.call-to-action }}</a>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+      <p>Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</a></p>
+    </div>
+  </main>
+
+  {% include footer.html %}
+  {% include foot.html %}
