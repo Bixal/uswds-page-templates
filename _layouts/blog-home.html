@@ -1,0 +1,63 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+    {% include header-extended.html %}
+    <!-- not sure why the utilty class for bg color isn't working -->
+    <section class="usa-section bg-red-50v" style="background-color:#112F4E;">
+        <div class="grid-container">
+            <h1 class="font-heading-3xl text-base-lightest">{{ page.title }}</h1>
+            <p class="font-alt-xl text-base-lightest">{{ page.description }}</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="grid-container padding-y-6">
+            <div class="grid-row grid-gap">
+                <div class="tablet:grid-col-4 tablet:order-2">
+                    <h2 class="margin-top-0">Categories</h2>
+                    <nav aria-label="Secondary navigation">
+                        <ul class="usa-sidenav margin-bottom-3" style="margin-left: 0; margin-right: 0;">
+                            {% for item in page.blog-categories %}
+                            <li class="usa-sidenav__item">
+                                <a href="javascript:void(0);">{{ item.name }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+                <div class="tablet:grid-col-8 tablet:order-1">
+                    <ul class="usa-card-group">
+                        {% for item in page.blog-posts %}
+                        <li class="usa-card">
+                            <div class="usa-card__container">
+                                <header class="usa-card__header">
+                                    <h2 class="usa-card__heading">{{ item.title }}</h2>
+                                </header>
+                                <div class="usa-card__media">
+                                    <div class="usa-card__img">
+                                        <img src="https://raw.githubusercontent.com/Bixal/rrt-content/main/assets/img/blog-1.jpg" alt="A placeholder image">
+                                    </div>
+                                </div>
+                                <div class="usa-card__body">
+                                    <p>By {{ item.author }}</p>
+                                    <small>{{ item.date }}</small>
+                                </div>
+                                <div class="usa-card__footer">
+                                    {% for item in item.labels %}
+                                    <span class="usa-tag bg-base">{{ item.name }}</span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <p>Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</a></p>
+        </div>
+    </main>
+
+    {% include footer.html %}
+    {% include foot.html %}
