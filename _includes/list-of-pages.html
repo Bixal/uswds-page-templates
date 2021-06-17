@@ -2,11 +2,11 @@
     {% for page in site.pages %}
         {% if page.template-title %}   
             <li class="usa-card tablet:grid-col-6 desktop:grid-col-4">
-                <div class="usa-card__container">
+                <div class="usa-card__container bg-base-lighter">
                     <div class="usa-card__body">
                         <h2>{{ page.template-title }}</h2>
                         <p>{{ page.template-description }}</p>
-                        <iframe src="{{ site.baseurl }}{{ page.url }}" class="border-1px border-base-lighter minw-mobile minh-mobile-lg width-full"></iframe>
+                        <iframe src="{{ site.baseurl }}{{ page.url }}" class="border-05 border-accent-cool-light minw-mobile minh-mobile-lg width-full"></iframe>
                     </div>
                     <div class="usa-card__footer">
                         <a href="{{ site.baseurl }}{{ page.url }}" class="usa-button display-inline-block margin-bottom-2" target="_blank">Open in browser</a> <a href="" class="usa-button usa-button--outline display-inline-block" target="_blank">Open in Figma</a>
