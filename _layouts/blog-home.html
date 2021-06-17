@@ -4,8 +4,7 @@
 
 <body>
     {% include header-extended.html %}
-    <!-- not sure why the utilty class for bg color isn't working -->
-    <section class="usa-section bg-red-50v" style="background-color:#112F4E;">
+    <section class="usa-section bg-blue-80v">
         <div class="grid-container">
             <h1 class="font-heading-3xl text-base-lightest">{{ page.title }}</h1>
             <p class="font-alt-xl text-base-lightest">{{ page.description }}</p>
@@ -18,7 +17,7 @@
                 <div class="tablet:grid-col-4 tablet:order-2">
                     <h2 class="margin-top-0">Categories</h2>
                     <nav aria-label="Secondary navigation">
-                        <ul class="usa-sidenav margin-bottom-3" style="margin-left: 0; margin-right: 0;">
+                        <ul class="usa-sidenav margin-bottom-3">
                             {% for item in page.blog-categories %}
                             <li class="usa-sidenav__item">
                                 <a href="javascript:void(0);">{{ item.name }}</a>
