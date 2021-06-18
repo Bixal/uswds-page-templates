@@ -36,6 +36,7 @@ breadcrumbs:
     url: agency.html
   - name: Leadership
     url: about-us/leadership.html
+figma: https://www.figma.com/file/s0zKIEPUh1k0oW4FDvVeIb/USWDS-Templates-Truss-Lib-v2.10.0?node-id=642%3A2371
 ---
 
 The Cabinet’s role is to advise the President on any subject he or she may require relating to the duties of each member’s respective office.

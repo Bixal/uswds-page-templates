@@ -12,6 +12,7 @@ breadcrumbs:
     url: media.html
   - name: Videos
     url: media/videos.html
+figma: null
 ---
 
 President Biden answers questions from Twitter on stimulus checks, vaccine production, and his morning routine, including making himself a cup of coffee.
