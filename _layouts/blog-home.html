@@ -15,7 +15,19 @@
         <div class="grid-container padding-y-6">
             <div class="grid-row grid-gap">
                 <div class="tablet:grid-col-4 tablet:order-2">
-                    <h2 class="margin-top-0">Categories</h2>
+                        <form class="usa-search usa-search--small" role="search">
+                          <label class="usa-sr-only" for="search-field-en-small"> Search </label>
+                          <input
+                            class="usa-input"
+                            id="search-field-en-small"
+                            type="search"
+                            name="search"
+                          />
+                          <button class="usa-button" type="submit">
+                            <span class="usa-sr-only">Search</span>
+                          </button>
+                        </form>
+                    <h2 class="margin-top-3">Categories</h2>
                     <nav aria-label="Secondary navigation">
                         <ul class="usa-sidenav margin-bottom-3">
                             {% for item in page.blog-categories %}
@@ -27,6 +39,81 @@
                     </nav>
                 </div>
                 <div class="tablet:grid-col-8 tablet:order-1">
+                    <ul class="usa-card-group">
+                        {% for item in page.blog-posts %}
+                        <li class="usa-card">
+                            <div class="usa-card__container">
+                                <header class="usa-card__header">
+                                    <h2 class="usa-card__heading">{{ item.title }}</h2>
+                                </header>
+                                <div class="usa-card__media">
+                                    <div class="usa-card__img">
+                                        <img src="https://raw.githubusercontent.com/Bixal/rrt-content/main/assets/img/blog-1.jpg" alt="A placeholder image">
+                                    </div>
+                                </div>
+                                <div class="usa-card__body">
+                                    <p>By {{ item.author }}</p>
+                                    <small>{{ item.date }}</small>
+                                </div>
+                                <div class="usa-card__footer">
+                                    {% for item in item.labels %}
+                                    <span class="usa-tag bg-base">{{ item.name }}</span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <ul class="usa-card-group">
+                        {% for item in page.blog-posts %}
+                        <li class="usa-card">
+                            <div class="usa-card__container">
+                                <header class="usa-card__header">
+                                    <h2 class="usa-card__heading">{{ item.title }}</h2>
+                                </header>
+                                <div class="usa-card__media">
+                                    <div class="usa-card__img">
+                                        <img src="https://raw.githubusercontent.com/Bixal/rrt-content/main/assets/img/blog-1.jpg" alt="A placeholder image">
+                                    </div>
+                                </div>
+                                <div class="usa-card__body">
+                                    <p>By {{ item.author }}</p>
+                                    <small>{{ item.date }}</small>
+                                </div>
+                                <div class="usa-card__footer">
+                                    {% for item in item.labels %}
+                                    <span class="usa-tag bg-base">{{ item.name }}</span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <ul class="usa-card-group">
+                        {% for item in page.blog-posts %}
+                        <li class="usa-card">
+                            <div class="usa-card__container">
+                                <header class="usa-card__header">
+                                    <h2 class="usa-card__heading">{{ item.title }}</h2>
+                                </header>
+                                <div class="usa-card__media">
+                                    <div class="usa-card__img">
+                                        <img src="https://raw.githubusercontent.com/Bixal/rrt-content/main/assets/img/blog-1.jpg" alt="A placeholder image">
+                                    </div>
+                                </div>
+                                <div class="usa-card__body">
+                                    <p>By {{ item.author }}</p>
+                                    <small>{{ item.date }}</small>
+                                </div>
+                                <div class="usa-card__footer">
+                                    {% for item in item.labels %}
+                                    <span class="usa-tag bg-base">{{ item.name }}</span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
                     <ul class="usa-card-group">
                         {% for item in page.blog-posts %}
                         <li class="usa-card">
