@@ -15,7 +15,8 @@
         <div class="grid-container padding-y-6">
             <div class="grid-row grid-gap">
                 <div class="tablet:grid-col-4 tablet:order-2">
-                    <h2 class="margin-top-0">Categories</h2>
+                    {% include search-small.html %}
+                    <h2 class="margin-top-3">Categories</h2>
                     <nav aria-label="Secondary navigation">
                         <ul class="usa-sidenav margin-bottom-3">
                             {% for item in page.blog-categories %}
@@ -36,7 +37,7 @@
                                 </header>
                                 <div class="usa-card__media">
                                     <div class="usa-card__img">
-                                        <img src="https://raw.githubusercontent.com/Bixal/rrt-content/main/assets/img/blog-1.jpg" alt="A placeholder image">
+                                        <img src="{{ item.image }}" alt="A placeholder image">
                                     </div>
                                 </div>
                                 <div class="usa-card__body">
@@ -52,7 +53,8 @@
                         </li>
                         {% endfor %}
                     </ul>
-                </div>
+                    <button class="usa-button">View More Posts</button>
+                </div>             
             </div>
             <p>Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</a></p>
         </div>
