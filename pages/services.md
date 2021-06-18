@@ -1,7 +1,7 @@
 ---
 layout: services
 template-title: Services
-template-description: Card-based layout of services offerings with icons, descriptions, and tags
+template-description: Card-based layout of service offerings with icons, descriptions, and tags
 title: Tools and Services
 description: Explore free and low-cost services for improving your users’ digital experience.
 source-domain: digital.gov
