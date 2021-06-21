@@ -4,8 +4,9 @@
     {% include header-extended.html %}
     <main id="main-content">
         <div class="grid-container">
+            {% include sidenavigation.html %}
             <h1 class="font-heading-2xl">{{ page.title }}</h1>
-            {{ content }}
+           
             <p>Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</a></p>
         </div>
 
