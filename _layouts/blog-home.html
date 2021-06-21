@@ -16,7 +16,7 @@
             <div class="grid-row grid-gap">
                 <div class="tablet:grid-col-4 tablet:order-2">
                     {% include search-small.html %}
-                    <h2 class="margin-top-3">Categories</h2>
+                    <h2 class="margin-top-3">Tags</h2>
                     <nav aria-label="Secondary navigation">
                         <ul class="usa-sidenav margin-bottom-3">
                             {% for item in page.blog-categories %}
@@ -53,7 +53,7 @@
                         </li>
                         {% endfor %}
                     </ul>
-                    <button class="usa-button">View More Posts</button>
+                    <button class="usa-button">View more posts</button>
                 </div>             
             </div>
             <p>Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</a></p>
