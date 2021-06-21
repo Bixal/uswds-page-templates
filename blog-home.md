@@ -25,8 +25,7 @@ blog-posts:
       labels:
         - name: Multilingual
         - name: Content
-        - name: Performance
-        - name: Analytics
+        - name: Performance and Analytics
         - name: Marketing
     - title: "USAGov’s Guide to Instagram"
       author: "Zulekha Abu"
@@ -35,8 +34,7 @@ blog-posts:
       labels:
         - name: Marketing
         - name: Content
-        - name: Performance
-        - name: Analytics
+        - name: Performance and Analytics
     - title: "How USAGov Cracked a Cybercrime Using Free Web Analytics Tools"
       author: "USAGov team"
       date: "November 05, 2020"
@@ -51,8 +49,7 @@ blog-categories:
     - name: Accessibility (3)
     - name: Multilingual (5)
     - name: Content (5)
-    - name: Performance (5)
-    - name: Analytics (2)
+    - name: Performance and Analytics (5)
     - name: Marketing (8)
     - name: Cyber (6)
 ---
