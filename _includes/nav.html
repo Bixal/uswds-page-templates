@@ -1,0 +1,18 @@
+<div class="grid-container">
+    <div class="">
+        <div class="usa-layout-docs__sidenav">
+            <nav aria-label="Secondary navigation">
+                <ul class="usa-sidenav">
+                    {% for item in include.nav %}
+                    <li class="usa-sidenav__item">
+                        <a href="javascript:void(0);">{{ item.title }}</a>
+                    </li>
+                    {% if item.subnav %}
+                        {% include nav.html nav=item.subnav %}
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
