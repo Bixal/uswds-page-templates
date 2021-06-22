@@ -21,18 +21,23 @@ address-labels:
      - label: Address line 1
        input-name: address-1
        required: true
+       form-type: input
      - label: Address line 2
        input-name: address-2
        required: true
+       form-type: input
      - label: City
        input-name: city
        required: true
+       form-type: input
      - label: State
        input-name: state
        required: true
+       form-type: state-combo-box
      - label: Zip code
        input-name: zip-code
        required: true
+       form-type: input
 source-domain: 
 source-url: 
 figma: https://www.figma.com/file/s0zKIEPUh1k0oW4FDvVeIb/USWDS-Templates-Truss-Lib-v2.10.0?node-id=892%3A373

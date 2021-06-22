@@ -20,19 +20,19 @@
             </p>
             <h2 class="margin-top-6">Contact Details</h2>
             {% for label in page.contact-labels %}
-            <label class="usa-label" for="{{label.input-name}}">
-              {{ label.label }}
-              {% if label.required %}
-              <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
-              {% else %}
-              <abbr title="optional"></abbr>
-              {% endif %}              
-            </label>
-            <input 
-            class="usa-input" 
-            id="{{label.input-name}}" 
-            name="{{label.input-name}}" 
-            {% if label.required %} required {% endif %}
+              <label class="usa-label" for="{{label.input-name}}">
+                {{ label.label }}
+                {% if label.required %}
+                  <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+                {% else %}
+                  <abbr title="optional"></abbr>
+                {% endif %}              
+              </label>
+              <input 
+              class="usa-input" 
+              id="{{label.input-name}}" 
+              name="{{label.input-name}}" 
+              {% if label.required %} required {% endif %}
             >
             {% endfor %}
 
@@ -43,21 +43,25 @@
 
             <h2 class="margin-top-6">Mailing Address</h2>
             {% for label in page.address-labels %}
-            <label class="usa-label" for="{{label.input-name}}">
-              {{ label.label }}
-              {% if label.required %}
-              <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+              {% if label.form-type == "input" %}
+                <label class="usa-label" for="{{label.input-name}}">
+                {{ label.label }}
+                {% if label.required %}
+                  <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+                {% else %}
+                  <abbr title="optional"></abbr>
+              {% endif %}
+                </label>
+                <input 
+                class="usa-input" 
+                id="{{label.input-name}}" 
+                name="{{label.input-name}}" 
+                {% if label.required %} required {% endif %}
+                >
+              {% elsif label.form-type == "state-combo-box" %}
+                {% include state-combo-box.html %}
               {% else %}
-              <abbr title="optional"></abbr>
-              {% endif %}     
-            </label>
-            <input 
-            class="usa-input" 
-            id="{{label.input-name}}" 
-            name="{{label.input-name}}" 
-            {% if label.required %} required {% endif %}
-            >
-            
+              {% endif %}
             {% endfor %}
 
             <div class="usa-checkbox margin-y-5">
