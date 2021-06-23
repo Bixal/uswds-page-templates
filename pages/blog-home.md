@@ -1,6 +1,6 @@
 ---
 layout: blog-home
-template-title: Blog Home
+template-title: Blog
 template-description: Card-based landing page for a blog with media cards, tags, and secondary navigation
 title: Blog
 description: Latest updates on how agencies are serving the American people
