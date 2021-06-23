@@ -19,54 +19,48 @@
               Required fields are marked with an asterisk (<abbr title="required" class="usa-hint usa-hint--required">*</abbr>).
             </p>
             <h2 class="margin-top-6">Contact Details</h2>
-            {% for label in page.contact-labels %}
-              <label class="usa-label" for="{{label.input-name}}">
-                {{ label.label }}
-                {% if label.required %}
+            {% for field in page.contact-fields %}
+              {% if field.form-type == "input" %}
+                <label class="usa-label" for="{{ field.input-name }}">
+                {{ field.label }}
+                {% if field.required %}
                   <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
                 {% else %}
                   <abbr title="optional"></abbr>
                 {% endif %}              
               </label>
-              <input 
-              class="usa-input" 
-              id="{{label.input-name}}" 
-              name="{{label.input-name}}" 
-              {% if label.required %} required {% endif %}
-            >
+              <input class="usa-input" id="{{ field.input-name }}" name="{{ field.input-name }}" {% if field.required %} required {% endif %}>
+              {% elsif field.form-type == "checkbox" %}
+                <div class="usa-checkbox margin-y-5">
+                  <input class="usa-checkbox__input" id="{{ field.checkbox-name }}" type="checkbox" name="{{ field.checkbox-name }}" value="{{ field.checkbox-name }}">
+                  <label class="usa-checkbox__label margin-top-3 margin-bottom-2" for="{{ field.checkbox-name }}">{{ field.label }}</label>
+                </div>
+              {% endif %}
             {% endfor %}
 
-            <div class="usa-checkbox margin-top-2">
-              <input class="usa-checkbox__input" id="receive-email-updates" type="checkbox" name="receive-email-updates" value="receive-email-updates">
-              <label class="usa-checkbox__label" for="receive-email-updates">Yes, I would like to receive updates on my status</label>
-            </div>
-
             <h2 class="margin-top-6">Mailing Address</h2>
-            {% for label in page.address-labels %}
-              {% if label.form-type == "input" %}
-                <label class="usa-label" for="{{label.input-name}}">
-                {{ label.label }}
-                {% if label.required %}
+            {% for field in page.address-fields %}
+              {% if field.form-type == "input" %}
+                <label class="usa-label" for="{{ field.input-name }}">
+                {{ field.label }}
+                {% if field.required %}
                   <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
-                {% else %}
+                    {% else %}
                   <abbr title="optional"></abbr>
-              {% endif %}
+                {% endif %}
                 </label>
-                <input 
-                class="usa-input" 
-                id="{{label.input-name}}" 
-                name="{{label.input-name}}" 
-                {% if label.required %} required {% endif %}
-                >
-              {% elsif label.form-type == "state-combo-box" %}
+                <input class="usa-input" id="{{ field.input-name }}" name="{{ field.input-name }}" {% if field.required %} required {% endif %}>
+              {% elsif field.form-type == "state-combo-box" %}
                 {% include state-combo-box.html %}
-              {% else %}
+              {% else field.form-type == "checkbox" %}
+                <div class="usa-checkbox margin-y-5">
+                  <input class="usa-checkbox__input" id="{{ field.checkbox-name }}" type="checkbox" name="{{ field.checkbox-name }}" value="{{ field.checkbox-name }}">
+                  <label class="usa-checkbox__label margin-top-3 margin-bottom-2" for="{{ field.checkbox-name }}">{{ field.label }}</label>
+                </div>
               {% endif %}
             {% endfor %}
 
             <div class="usa-checkbox margin-y-5">
-              <input class="usa-checkbox__input" id="preferred-address" type="checkbox" name="preferred-address" value="preferred-address">
-              <label class="usa-checkbox__label margin-top-3 margin-bottom-2" for="preferred-address">Make this my preferred address</label>
               <button class="usa-button  usa-button--unstyled">Add new</button>
             </div>
             <button class="usa-button margin-bottom-2">Save address</button>
