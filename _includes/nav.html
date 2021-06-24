@@ -1,13 +1,29 @@
-
-            <nav>
-                <ul class="usa-sidenav">
-                    {% for item in include.nav %}
-                    <li class="usa-sidenav__item">
-                        <a href="{{ item.url }}">{{ item.title }}</a>
-                    </li>
-                    {% if item.subnav %}
-                        {% include nav.html nav=item.subnav %}
-                    {% endif %}
-                {% endfor %}
-                </ul>
-            </nav>
+<ul class="usa-sidenav">
+    <li class="usa-sidenav__item">
+      <a href="javascript:void(0);" class="usa-current">Introduction</a>
+    </li>
+    <li class="usa-sidenav__item">
+      <a href="javascript:void(0);">What we strive for</a>
+    <li class="usa-sidenav__item">
+      <a href="javascript:void(0);">Unnaceptable behavior</a>
+      <ul class="usa-sidenav__sublist">
+        <li class="usa-sidenav__item">
+          <a href="javascript:void(0);">Sexual and non sexual harassment</a>
+        <li class="usa-sidenav__item">
+          <a href="javascript:void(0);">Conduct Unbecoming a Federal Employee</a>
+        </li>
+        <li class="usa-sidenav__item">
+          <a href="javascript:void(0);">Other Unacceptable Behavior</a>
+        </li>
+      </ul>
+    </li>
+    <li class="usa-sidenav__item">
+      <a href="javascript:void(0);">Reporting violations</a>
+    </li>
+    <li class="usa-sidenav__item">
+      <a href="javascript:void(0);">Credits</a>
+    </li>
+    <li class="usa-sidenav__item">
+      <a href="javascript:void(0);">Version</a>
+    </li>
+  </ul>
