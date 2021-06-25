@@ -3,7 +3,7 @@ layout: about-us
 template-title: About Us
 template-description: About Us page with company summary, values, and leadership profiles.
 title: About Boem
-description: About Us page with company summary, values, and leadership profiles.
+description: The Mission of the Bureau of Ocean Energy Management is to manage development of U.S. Outer Continental Shelf energy and mineral resources in an environmentally and economically responsible way.
 hero-img: https://raw.githubusercontent.com/Bixal/rrt-content/main/assets/img/waterboat.jpeg
 hero-alt: overhead shot of small row boat with passengers moving across clear water, from bottom to top
 values:
@@ -45,5 +45,3 @@ source-domain: boem.gov
 source-url: https://www.boem.gov/about-boem
 figma: https://www.figma.com/file/s0zKIEPUh1k0oW4FDvVeIb/USWDS-Templates-Truss-Lib-v2.10.0?node-id=399%3A2542
 ---
-
-The Mission of the Bureau of Ocean Energy Management is to manage development of U.S. Outer Continental Shelf energy and mineral resources in an environmentally and economically responsible way.
