@@ -81,7 +81,7 @@ The GSA Policy Statement on Sexual and Non-Sexual Harassment forbids:
 
 Federal employees can be subject to appropriate discipline, up to and including removal, for conduct unbecoming a federal employee, which is conduct which is unattractive; unsuitable; detracting from one's character or reputation; or creates an unfavorable impression. Abusive and demeaning remarks to and about others in the workplace, and sexual remarks, which do not rise to the level of sexual harassment under the employment discrimination laws, nonetheless can be considered conduct unbecoming a federal employee.
 
-#### Other unnaceptable behavior
+### Other unnaceptable behavior
 
 In addition, the following behaviors violate applicable laws and policies, or otherwise undermine the culture of respect and inclusion we seek to build within TTS:
 
@@ -92,11 +92,11 @@ In addition, the following behaviors violate applicable laws and policies, or ot
 - Repeatedly interrupting or talking over other people in meetings and discussions.
 - Negative or offensive remarks based on gender expression, mental illness, socioeconomic status or background, neuro(a)typicality, physical appearance, or body size.
 
-### Reporting violations
+## Reporting violations
 
 The process for reporting violations of GSA's Policy Statement on sexual and non-sexual harassment can be found in GSA Order ADM 2325.8 Section 3(d) and GSA Order HRM 9700.6. Depending on your complaint, you may have a 45-day window from the date of the incident to report it to the GSA. Please read the GSA Order carefully.The behaviors listed in this section undermine the culture of inclusion and respect that we are trying to build within TTS. We encourage you to report violations to your supervisor, any management official, a Human Resources official, and/or the Office of Civil Rights, so that TTS can take any necessary steps to ensure that we have a safe and welcoming team.
 
-### Credits
+## Credits
 
 TTS is greatly appreciative of the multiple sources that we drew from to build this Code of Conduct, including:
 
