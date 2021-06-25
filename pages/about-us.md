@@ -1,9 +1,9 @@
 ---
 layout: about-us
 template-title: About Us
-template-description: About Us page with company summary and leadership profiles.
+template-description: About Us page with company summary, values, and leadership profiles.
 title: About Boem
-description: About Us page with company summary and leadership profiles.
+description: About Us page with company summary, values, and leadership profiles.
 values:
      - topic: Responsible Stewardship
        description: The bureau is responsible for the U.S. OCS energy and mineral resources, as well as protecting the environment the development may impact. These resources belong to the American people and future generations of Americans; wise use of and fair return for these resources are foremost in our management efforts.
