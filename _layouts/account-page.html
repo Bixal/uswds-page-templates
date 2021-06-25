@@ -1,0 +1,82 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+  {% include header-extended.html %}
+
+  <main id="main-content">
+	<section class="bg-primary usa-section border-bottom-05 border-secondary-dark">
+	  <div class="grid-container margin-y-5">
+	    <div class="tablet:grid-col-9">
+	      <h1 class="text-base-lightest">Hello, Carrington</h1>
+	      <p class="usa-intro text-base-lightest">Manage your orders and account details</p>
+	    </div>
+	  </div>
+	</section>
+
+	<div class="grid-container margin-y-5">
+	  <div class="grid-row grid-gap">
+	  	{% for info in page.cards %}
+	  	  <div class="tablet:grid-col-6 usa-card">
+            <div class="usa-card__container">
+              <a href="javascript:void(0)" class="radius-lg padding-x-5 padding-y-3 tablet:padding-5 hover:bg-accent-cool-lighter hover:shadow-2 text-no-underline">
+              <h2 class="margin-top-0 text-primary">{{ info.title }}</h2>
+              <p class="text-ink font-heading-md margin-y-1">{{ info.description }}</p>
+              </a>
+            </div>
+          </div>
+	  	{% endfor %}
+	  </div>
+
+      <h2 class="border-bottom-05 border-primary padding-bottom-1">Account</h2>
+      <div class="grid-row grid-gap margin-bottom-6">
+      	{% for info in page.account %}
+      	  	<div class="tablet:grid-col-6">
+              <h3>{{ info.subheading }}</h3>
+              {% for item in info.items %}
+              	<p> {{ item }} </p>
+              {% endfor %}
+              <a class="usa-link" href="javascript:void(0)">Edit</a>
+           </div>
+      	{% endfor %}
+      </div>
+
+      <h2 class="border-bottom-05 border-primary padding-bottom-1">Settings</h2>
+  	  <div class="grid-row grid-gap margin-bottom-5">
+  	  	{% for info in page.settings %}
+      	  	<div class="tablet:grid-col-6 margin-bottom-6">
+              <h3>{{ info.subheading }}</h3>
+              <p> {{ info.description }} </p>
+              {% if info.checkbox == "present" %}
+              	<ul class="usa-list usa-list--unstyled">
+			        <li>
+			          <input class="usa-checkbox__input" id="receive-email-updates" type="checkbox" name="receive-email-updates" value="receive-email-updates">
+			          <label class="usa-checkbox__label" for="receive-email-updates">Email</label>
+			        </li>
+			        <li>
+			          <input class="usa-checkbox__input" id="receive-text-updates" type="checkbox" name="receive-text-updates" value="receive-text-updates">
+			          <label class="usa-checkbox__label" for="receive-text-updates">Text</label>
+			        </li>
+	      		</ul>
+	      	  {% else %}
+	      	  	<a class="usa-link" href="javascript:void(0)">Delete profile</a>
+	      	  {% endif %}
+           </div>
+      	{% endfor %}
+      </div>
+      <h2 class="border-bottom-05 border-primary padding-bottom-1">Help and more</h2>
+		<ul class="usa-list usa-list--unstyled">
+		  {% for info in page.help-more %}
+	  		{% for item in info.items %}
+	  		  <li><a href="javascript:void(0)" class="usa-link text-no-underline">{{ item }}</a></li>
+            {% endfor %}
+          {% endfor %}
+		</ul>
+
+	</div>
+
+  {% include footer.html %}
+  {% include foot.html %}
+
+
