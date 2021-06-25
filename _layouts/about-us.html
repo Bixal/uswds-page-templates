@@ -1,0 +1,63 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+  {% include header-extended.html %}
+
+<main id="main-content">
+<section>
+	<img src="{{ page.hero-img }}" class="width-full" alt="{{ page.hero-alt }}">
+</section>
+
+<section class="grid-container margin-top-4 margin-bottom-4">
+	<h1 class="margin-top-0 tablet:margin-bottom-0">
+		{{ page.title }}
+	</h1>
+	<p class="usa-intro">
+		{{ page.description }}
+	</p>
+  </section>
+  <section class="usa-section usa-section--light">
+    <div class="grid-container">
+	   {% for value in page.values %}
+		  <div class="usa-media-block grid-col">
+	        <img class="usa-media-block__img margin-right-3 width-15" src="{{ value.image-source }}" alt="{{ value.alt-text }}">
+	        <div class="usa-media-block__body">
+	          <h3 class="margin-y-1">{{ value.topic }}</h3>
+	          <p class="margin-top-1">{{ value.description }}</p>
+	        </div>
+		  </div>
+	   {% endfor %}
+    </div>
+ </section>
+ <section>
+    <div class="grid-container">
+      <h2 id="leadership" class="font-heading-xl margin-top-6">Leadership</h2>
+       <div class="grid-row grid-gap">
+      	{% for staff in page.leadership %}
+      	  <div class="grid-col-4">
+            <img class="boem-leader-img" src="{{ staff.image-source }}" alt="{{ staff.alt-text }}">
+            <h3 class="margin-y-1">{{ staff.title }}</h3>
+            <a href="javascript:void(0)" class="usa-link margin-bottom-4">{{ staff.name }}</a>
+          </div>
+      	{% endfor %}
+       </div>
+
+      <h2 id="program-chiefs" class="font-heading-xl margin-top-6">Program Chiefs</h2>
+       <div class="grid-row grid-gap">
+      	{% for staff in page.program-chiefs %}
+      	  <div class="grid-col-4">
+            <img class="boem-leader-img" src="{{ staff.image-source }}" alt="{{ staff.alt-text }}">
+            <h3 class="margin-y-1">{{ staff.title }}</h3>
+            <a href="javascript:void(0)" class="usa-link margin-bottom-4">{{ staff.name }}</a>
+          </div>
+      	{% endfor %}
+   	   </div>
+   	  <p class="margin-y-5">Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</a></p>
+   	</div>
+  </section>
+</main>
+
+  {% include footer.html %}
+  {% include foot.html %}
