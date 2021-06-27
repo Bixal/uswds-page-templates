@@ -2,8 +2,8 @@
 layout: account-page
 template-title: Account
 template-description: Account landing page that displays orders, saved products, and personal information
-title: Account
-description: Account landing page that displays orders, saved products, and personal information
+title: Hello, Carrington
+description: Manage your orders and account details
 cards:
      - title: Orders
        description: Track your recent orders and view your purchase history.
