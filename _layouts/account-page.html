@@ -16,18 +16,19 @@
 	</section>
 
 	<div class="grid-container margin-y-5">
-	  <div class="grid-row grid-gap">
+		<ul class="usa-card-group">
 	  	{% for info in page.cards %}
-	  	  <div class="tablet:grid-col-6 usa-card-group">
-            <div class="usa-card__container">
-              <a href="javascript:void(0)" class="radius-lg padding-x-5 padding-y-3 tablet:padding-5 hover:bg-accent-cool-lighter hover:shadow-2 text-no-underline">
-              <h2 class="margin-top-0 text-primary">{{ info.title }}</h2>
-              <p class="text-ink font-heading-md margin-y-1">{{ info.description }}</p>
-              </a>
-            </div>
-          </div>
+			<li class="usa-card tablet:grid-col-6">
+				<div class="usa-card__container" class="radius-lg padding-x-5 padding-y-3 tablet:padding-5">
+					<div class="usa-card__body">				
+						<h2 class="margin-top-0 text-primary"><a href="javascript:void(0)" class="usa-link text-no-underline">{{ info.title }}</a></h2>
+						<p class="text-ink font-heading-md margin-y-1">{{ info.description }}</p>
+					</div>
+				</div>		
+			</li>
 	  	{% endfor %}
-	  </div>
+		</ul>
+
 
       <h2 class="border-bottom-05 border-primary padding-bottom-1">Account</h2>
       <div class="grid-row grid-gap margin-bottom-6">
