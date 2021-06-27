@@ -37,7 +37,13 @@
               <h3>{{ info.subheading }}</h3>
               <ul class="usa-list usa-list--unstyled margin-bottom-2">
               {% for item in info.items %}
-              	<li>{{ item }}</li>
+              	<li>
+					{% if item contains "@" %}<a href="mailto:{{ item }}" class="usa-link">{{ item }}</a>
+					{% elsif item contains "("%}<a href="tel:{{ item }}" class="usa-link">{{ item }}</a>
+					{% else %}
+					{{ item }}
+					{% endif %}
+				</li>
               {% endfor %}
               </ul>
               <a class="usa-link" href="javascript:void(0)">Edit</a>

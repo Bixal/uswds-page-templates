@@ -13,12 +13,12 @@ account:
      - subheading: Personal information
        items:
             - carrington.levine@gmail.com
-            - 770.123.4567
+            - (770) 123-4567
      - subheading: Organization
        items:
             - Levine Hope for Humanity
             - carrington.levine@gmail.com
-            - 770.123.4567   
+            - (770) 123-4567   
      - subheading: Shipping
        items:
             - 1234 Hemminton Park
