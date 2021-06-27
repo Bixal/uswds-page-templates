@@ -1,29 +1,16 @@
 <ul class="usa-sidenav">
-    <li class="usa-sidenav__item">
-      <a href="javascript:void(0);" class="usa-current">Introduction</a>
-    </li>
-    <li class="usa-sidenav__item">
-      <a href="javascript:void(0);">What we strive for</a>
-    <li class="usa-sidenav__item">
-      <a href="javascript:void(0);">Unnaceptable behavior</a>
-      <ul class="usa-sidenav__sublist">
-        <li class="usa-sidenav__item">
-          <a href="javascript:void(0);">Sexual and non sexual harassment</a>
-        <li class="usa-sidenav__item">
-          <a href="javascript:void(0);">Conduct Unbecoming a Federal Employee</a>
-        </li>
-        <li class="usa-sidenav__item">
-          <a href="javascript:void(0);">Other Unacceptable Behavior</a>
-        </li>
-      </ul>
-    </li>
-    <li class="usa-sidenav__item">
-      <a href="javascript:void(0);">Reporting violations</a>
-    </li>
-    <li class="usa-sidenav__item">
-      <a href="javascript:void(0);">Credits</a>
-    </li>
-    <li class="usa-sidenav__item">
-      <a href="javascript:void(0);">Version</a>
-    </li>
-  </ul>
+  {% for item in page.nav %}
+  <li class="usa-sidenav__item">
+    <a href="{{ item.url }}"{% if item.current %} class="usa-current"{% endif %}>{{ item.title }}</a>
+    {% if item.subnav %}
+    <ul class="usa-sidenav__sublist">
+      {% for entry in item.subnav %}
+      <li class="usa-sidenav__item">
+        <a href="{{ entry.url }}">{{ entry.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
