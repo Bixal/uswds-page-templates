@@ -1,0 +1,18 @@
+<nav aria-label="Secondary navigation">
+  <ul class="usa-sidenav">
+    {% for item in page.nav %}
+    <li class="usa-sidenav__item">
+      <a href="{{ item.url }}"{% if item.current %} class="usa-current"{% endif %}>{{ item.title }}</a>
+      {% if item.subnav %}
+      <ul class="usa-sidenav__sublist">
+        {% for entry in item.subnav %}
+        <li class="usa-sidenav__item">
+          <a href="{{ entry.url }}">{{ entry.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
