@@ -15,6 +15,14 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
+/* Chrome on Android text resize issue */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust */
+button {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+
 /* responsive iframe approach from https://www.w3schools.com/ */
 .iframe-container {
   position: relative;
