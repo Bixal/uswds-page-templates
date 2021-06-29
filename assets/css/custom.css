@@ -1,5 +1,7 @@
 body * {
   font-family: "Public Sans Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 body {
@@ -18,8 +20,7 @@ h2, h3, h4, h5, h6 {
 /* Chrome on Android text resize issue */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust */
 .usa-accordion__button {
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+  
 }
 
 
