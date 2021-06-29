@@ -10,3 +10,4 @@ figma: https://www.figma.com/file/s0zKIEPUh1k0oW4FDvVeIb/USWDS-Templates-Truss-L
 ---
 
 These are the most common questions we receive through our various customer support channels. If you don’t see what you’re looking for here, please [contact us](https://www.ssa.gov/agency/contact/){: .usa-link}.
+{: .desktop:width-tablet}

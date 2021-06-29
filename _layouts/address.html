@@ -1,0 +1,75 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+  {% include header-extended.html %}
+
+  <main id="main-content">
+    <div class="grid-container flex-align-center margin-y-5">
+      <div class="display-flex flex-column flex-align-center">
+        <form class="usa-form usa-form--large">
+          <fieldset class="usa-fieldset">
+            <legend class="usa-legend">
+              <h1 class="margin-y-1">
+                {{ page.title }}
+              </h1>
+            </legend>
+            <p class="margin-y-1">
+              Required fields are marked with an asterisk (<abbr title="required" class="usa-hint usa-hint--required">*</abbr>).
+            </p>
+            <h2 class="margin-top-6">Contact Details</h2>
+            {% for field in page.contact-fields %}
+              {% if field.form-type == "input" %}
+                <label class="usa-label" for="{{ field.input-name }}">
+                {{ field.label }}
+                {% if field.required %}
+                  <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+                {% else %}
+                  <abbr title="optional"></abbr>
+                {% endif %}              
+              </label>
+              <input class="usa-input" id="{{ field.input-name }}" name="{{ field.input-name }}" {% if field.required %} required {% endif %}>
+              {% elsif field.form-type == "checkbox" %}
+                <div class="usa-checkbox margin-y-5">
+                  <input class="usa-checkbox__input" id="{{ field.checkbox-name }}" type="checkbox" name="{{ field.checkbox-name }}" value="{{ field.checkbox-name }}">
+                  <label class="usa-checkbox__label margin-top-3 margin-bottom-2" for="{{ field.checkbox-name }}">{{ field.label }}</label>
+                </div>
+              {% endif %}
+            {% endfor %}
+
+            <h2 class="margin-top-6">Mailing Address</h2>
+            {% for field in page.address-fields %}
+              {% if field.form-type == "input" %}
+                <label class="usa-label" for="{{ field.input-name }}">
+                {{ field.label }}
+                {% if field.required %}
+                  <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+                    {% else %}
+                  <abbr title="optional"></abbr>
+                {% endif %}
+                </label>
+                <input class="usa-input" id="{{ field.input-name }}" name="{{ field.input-name }}" {% if field.required %} required {% endif %}>
+              {% elsif field.form-type == "state-combo-box" %}
+                {% include state-combo-box.html %}
+              {% else field.form-type == "checkbox" %}
+                <div class="usa-checkbox margin-y-5">
+                  <input class="usa-checkbox__input" id="{{ field.checkbox-name }}" type="checkbox" name="{{ field.checkbox-name }}" value="{{ field.checkbox-name }}">
+                  <label class="usa-checkbox__label margin-top-3 margin-bottom-2" for="{{ field.checkbox-name }}">{{ field.label }}</label>
+                </div>
+              {% endif %}
+            {% endfor %}
+
+            <div class="usa-checkbox margin-y-5">
+              <button class="usa-button usa-button--unstyled">Add new</button>
+            </div>
+            <button class="usa-button margin-bottom-2">Save address</button>
+            <button class="usa-button usa-button--unstyled display-block">Cancel</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  {% include footer.html %}
+  {% include foot.html %}

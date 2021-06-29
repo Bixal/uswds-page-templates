@@ -1,0 +1,91 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+  {% include header-extended.html %}
+
+  <main id="main-content">
+	<section class="bg-primary usa-section border-bottom-05 border-secondary-dark">
+	  <div class="grid-container margin-y-5">
+	    <div class="tablet:grid-col-9">
+	      <h1 class="text-base-lightest">{{ page.title }}</h1>
+	      <p class="usa-intro text-base-lightest">{{ page.description }}</p>
+	    </div>
+	  </div>
+	</section>
+
+	<div class="grid-container margin-y-5">
+		<ul class="usa-card-group">
+	  	{% for info in page.cards %}
+			<li class="usa-card tablet:grid-col-6">
+				<div class="usa-card__container">
+					<div class="usa-card__body">				
+						<h2 class="margin-top-0 text-primary"><a href="javascript:void(0)" class="usa-link text-no-underline">{{ info.title }}</a></h2>
+						<p class="text-ink font-heading-md margin-y-1">{{ info.description }}</p>
+					</div>
+				</div>		
+			</li>
+	  	{% endfor %}
+		</ul>
+
+
+      <h2 class="border-bottom-05 border-primary padding-bottom-1">Account</h2>
+      <div class="grid-row grid-gap margin-bottom-6">
+      	{% for info in page.account %}
+      	  	<div class="tablet:grid-col-6">
+              <h3>{{ info.subheading }}</h3>
+              <ul class="usa-list usa-list--unstyled margin-bottom-2">
+              {% for item in info.items %}
+              	<li>
+					{% if item contains "@" %}<a href="mailto:{{ item }}" class="usa-link">{{ item }}</a>
+					{% elsif item contains "("%}<a href="tel:{{ item }}" class="usa-link">{{ item }}</a>
+					{% else %}
+					{{ item }}
+					{% endif %}
+				</li>
+              {% endfor %}
+              </ul>
+              <a class="usa-link" href="javascript:void(0)">Edit</a>
+           </div>
+      	{% endfor %}
+      </div>
+
+      <h2 class="border-bottom-05 border-primary padding-bottom-1">Settings</h2>
+  	  <div class="grid-row grid-gap margin-bottom-5">
+  	  	{% for info in page.settings %}
+      	  	<div class="tablet:grid-col-6 margin-bottom-6">
+              <h3>{{ info.subheading }}</h3>
+              <p>{{ info.description }}</p>
+              {% if info.checkbox == "present" %}
+              	<ul class="usa-list usa-list--unstyled">
+			        <li>
+			          <input class="usa-checkbox__input" id="receive-email-updates" type="checkbox" name="receive-email-updates" value="receive-email-updates">
+			          <label class="usa-checkbox__label" for="receive-email-updates">Email</label>
+			        </li>
+			        <li>
+			          <input class="usa-checkbox__input" id="receive-text-updates" type="checkbox" name="receive-text-updates" value="receive-text-updates">
+			          <label class="usa-checkbox__label" for="receive-text-updates">Text</label>
+			        </li>
+	      		</ul>
+	      	  {% else %}
+	      	  	<a class="usa-link" href="javascript:void(0)">Delete profile</a>
+	      	  {% endif %}
+           </div>
+      	{% endfor %}
+      </div>
+      <h2 class="border-bottom-05 border-primary padding-bottom-1">Help and more</h2>
+		<ul class="usa-list usa-list--unstyled">
+		  {% for info in page.help-more %}
+	  		{% for item in info.items %}
+	  		  <li><a href="javascript:void(0)" class="usa-link text-no-underline">{{ item }}</a></li>
+            {% endfor %}
+          {% endfor %}
+		</ul>
+
+	</div>
+
+  {% include footer.html %}
+  {% include foot.html %}
+
+
