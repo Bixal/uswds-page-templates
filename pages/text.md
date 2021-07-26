@@ -1,5 +1,5 @@
 ---
-layout: text-home
+layout: text
 template-title: Text
 template-description: Long form content with a variety of typographical elements including various headings, links, tables and lists.
 title: Code of conduct

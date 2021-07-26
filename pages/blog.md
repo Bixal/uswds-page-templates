@@ -1,5 +1,5 @@
 ---
-layout: blog-home
+layout: blog
 template-title: Blog
 template-description: Card-based landing page for a blog with media cards, tags, and secondary navigation
 title: Blog

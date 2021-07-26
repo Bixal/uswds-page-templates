@@ -1,5 +1,5 @@
 ---
-layout: account-page
+layout: account
 template-title: Account
 template-description: Account landing page that displays orders, saved products, and personal information
 title: Hello, Carrington
