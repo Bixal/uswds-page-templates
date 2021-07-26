@@ -27,6 +27,7 @@ nav:
     url: tbd
   - title: Version
     url: tbd
+figma: https://www.figma.com/file/QVPduB8h6DIENYULFVCism/?node-id=1101%3A3140
 ---
 
 ## Introduction

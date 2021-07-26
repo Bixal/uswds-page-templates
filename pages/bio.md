@@ -13,7 +13,7 @@ breadcrumbs:
       url: "#"
 profile-image: https://raw.githubusercontent.com/Bixal/rrt-content/main/assets/img/Bio-LeftonAmanda.jpg
 profile-image-alt: Headshot photo of Amanda Lefton with the American flag in the background
-figma: https://www.figma.com/file/s0zKIEPUh1k0oW4FDvVeIb/USWDS-Templates-Truss-Lib-v2.10.0?node-id=539%3A2296
+figma: https://www.figma.com/file/QVPduB8h6DIENYULFVCism/?node-id=1101%3A3135
 background-image: https://raw.githubusercontent.com/Bixal/rrt-content/main/assets/img/bio.jpg
 ---
 

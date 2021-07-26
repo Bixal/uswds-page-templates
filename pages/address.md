@@ -50,7 +50,7 @@ address-fields:
        form-type: checkbox
 source-domain: 
 source-url: 
-figma: https://www.figma.com/file/s0zKIEPUh1k0oW4FDvVeIb/USWDS-Templates-Truss-Lib-v2.10.0?node-id=892%3A373
+figma: https://www.figma.com/file/QVPduB8h6DIENYULFVCism/?node-id=1101%3A3133
 ---
 
  

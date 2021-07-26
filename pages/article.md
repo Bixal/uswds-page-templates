@@ -8,7 +8,7 @@ source-domain: digital.gov
 source-url: https://18f.gsa.gov/2021/04/01/building_a_user-centered_data_strategy/
 hero-image: https://github.com/Bixal/rrt-content/blob/main/assets/img/farmer-on-tablet-usda.jpg?raw=true
 hero-image-alt: Farmer works on tablet with large tractor in the background
-figma: https://www.figma.com/file/s0zKIEPUh1k0oW4FDvVeIb/USWDS-Templates-Truss-Lib-v2.10.0?node-id=539%3A1895
+figma: https://www.figma.com/file/QVPduB8h6DIENYULFVCism/?node-id=1101%3A3134
 ---
 
 By Princess Ojiaku , Edwin Torres , Mark Headd
