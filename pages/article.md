@@ -4,18 +4,18 @@ template-title: Article
 template-description: Long form content with hero image, tags, and a variety of typographical elements
 title: Building a user-centered data strategy
 description: 18F can help agencies with the process of developing an effective data strategy. Our principles of user-centered design, agile, and iterative delivery can increase your agencies’ chance for success in using data more effectively.
+byline: "By Princess Ojiaku , Edwin Torres , Mark Headd"
+dateline: April 1, 2021
+labels:
+    - name: Data access
+    - name: User-centered design
+    - name: Agile
 source-domain: digital.gov
 source-url: https://18f.gsa.gov/2021/04/01/building_a_user-centered_data_strategy/
 hero-image: https://github.com/Bixal/rrt-content/blob/main/assets/img/farmer-on-tablet-usda.jpg?raw=true
 hero-image-alt: Farmer works on tablet with large tractor in the background
 figma: https://www.figma.com/file/QVPduB8h6DIENYULFVCism/?node-id=1101%3A3134
 ---
-
-By Princess Ojiaku , Edwin Torres , Mark Headd
-
-April 1, 2021
-
-<p><span class="usa-tag text-no-wrap">data access</span> <span class="usa-tag text-no-wrap">user-centered design</span> <span class="usa-tag text-no-wrap">agile</span></p>
 
 18F can help agencies with the process of developing an effective data strategy. Our principles of user-centered design, agile, and iterative delivery can increase your agencies’ chance for success in using data more effectively.
 {: .usa-intro}
@@ -79,9 +79,9 @@ Agile and Human-centered design work together. They're more commonly used in sof
 
 Federal agencies are moving ahead with actions under the Federal Data Strategy plan to improve data management. This strategy includes:
 
--   The [Data Skills Catalog](https://resources.data.gov/assets/documents/fds-data-skills-catalog.pdf){: .usa-link},
--   The [Data Ethics Framework](https://resources.data.gov/assets/documents/fds-data-ethics-framework.pdf){: .usa-link}, and;
--   The repository [resources.data.gov,](https://resources.data.gov/){: .usa-link} which includes playbooks, templates, tools, and other resources.
+- The [Data Skills Catalog](https://resources.data.gov/assets/documents/fds-data-skills-catalog.pdf){: .usa-link},
+- The [Data Ethics Framework](https://resources.data.gov/assets/documents/fds-data-ethics-framework.pdf){: .usa-link}, and;
+- The repository [resources.data.gov,](https://resources.data.gov/){: .usa-link} which includes playbooks, templates, tools, and other resources.
 
 Agencies can use these resources to start their own data related initiatives. However, the above strategies cannot be used without modification: each organization has unique needs, users, and current approaches to data management which need to be taken into account. This means that these resources have to be adapted to every particular circumstance.
 
