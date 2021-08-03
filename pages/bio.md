@@ -22,8 +22,6 @@ Prior to serving as the Director for BOEM, Amanda Lefton most recently served as
 
 Originally from Queens, NY, Ms. Lefton grew up on Long Island, NY, and holds a Bachelor of Arts from the University at Albany.
 
-[Connect on LinkedIn](#){: .usa-button .margin-y-4}
-
 **Email:** <Amanda.Lefton@boem.gov>{: .usa-link}
 
 **Phone:** 202-208-6474
