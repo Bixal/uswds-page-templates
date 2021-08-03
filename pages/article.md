@@ -15,7 +15,7 @@ By Princess Ojiaku , Edwin Torres , Mark Headd
 
 April 1, 2021
 
-<p><span class="usa-tag">data access</span> <span class="usa-tag">user-centered design</span> <span class="usa-tag">agile</span></p>
+<p><span class="usa-tag text-no-wrap">data access</span> <span class="usa-tag text-no-wrap">user-centered design</span> <span class="usa-tag text-no-wrap">agile</span></p>
 
 18F can help agencies with the process of developing an effective data strategy. Our principles of user-centered design, agile, and iterative delivery can increase your agencies’ chance for success in using data more effectively.
 {: .usa-intro}
