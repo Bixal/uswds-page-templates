@@ -6,6 +6,7 @@ title: Director of BOEM Amanda Lefton
 description: Biography of Amanda Lefton
 source-domain: boem.gov
 source-url: https://www.boem.gov/about-boem/boem-leadership/amanda-lefton
+button-label: Connect on LinkedIn
 breadcrumbs:
     - name: About BOEM
       url: "#"
@@ -21,8 +22,6 @@ Prior to serving as the Director for BOEM, Amanda Lefton most recently served as
 {: .margin-top-0}
 
 Originally from Queens, NY, Ms. Lefton grew up on Long Island, NY, and holds a Bachelor of Arts from the University at Albany.
-
-[Connect on LinkedIn](#){: .usa-button .margin-y-4}
 
 **Email:** <Amanda.Lefton@boem.gov>{: .usa-link}
 
