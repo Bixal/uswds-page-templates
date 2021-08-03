@@ -6,6 +6,7 @@ title: Director of BOEM Amanda Lefton
 description: Biography of Amanda Lefton
 source-domain: boem.gov
 source-url: https://www.boem.gov/about-boem/boem-leadership/amanda-lefton
+button-label: Connect on LinkedIn
 breadcrumbs:
     - name: About BOEM
       url: "#"
