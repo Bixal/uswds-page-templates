@@ -1,5 +1,5 @@
 ---
-layout: text-home
+layout: text
 template-title: Text
 template-description: Long form content with a variety of typographical elements including various headings, links, tables and lists.
 title: Code of conduct
@@ -27,6 +27,7 @@ nav:
     url: tbd
   - title: Version
     url: tbd
+figma: https://www.figma.com/file/QVPduB8h6DIENYULFVCism/?node-id=1101%3A3140
 ---
 
 ## Introduction

@@ -1,5 +1,5 @@
 ---
-layout: blog-home
+layout: blog
 template-title: Blog
 template-description: Card-based landing page for a blog with media cards, tags, and secondary navigation
 title: Blog
@@ -52,5 +52,6 @@ blog-categories:
     - name: Performance and Analytics (5)
     - name: Marketing (8)
     - name: Cyber (6)
+figma: https://www.figma.com/file/QVPduB8h6DIENYULFVCism/?node-id=1101%3A3136
 ---
 

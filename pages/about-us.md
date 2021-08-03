@@ -43,5 +43,5 @@ program-chiefs:
        alt-text: Headshot photo of William Yancey with the American flag in the background
 source-domain: boem.gov
 source-url: https://www.boem.gov/about-boem
-figma: https://www.figma.com/file/s0zKIEPUh1k0oW4FDvVeIb/USWDS-Templates-Truss-Lib-v2.10.0?node-id=399%3A2542
+figma: https://www.figma.com/file/QVPduB8h6DIENYULFVCism/?node-id=1101%3A3131
 ---
