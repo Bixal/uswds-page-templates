@@ -43,4 +43,4 @@ The Cabinet’s role is to advise the President on any subject he or she may req
 {: .usa-intro}
 
 President Biden’s Cabinet reflects his pledge to appoint leaders of government agencies that reflect the country they aim to serve.
-{: .width-tablet}
+{: .maxw-tablet}
