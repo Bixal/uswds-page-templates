@@ -1,9 +1,9 @@
 ---
-layout: collection-list
-template-title: Collection list
-template-description: List of collections with metadata, search bar, filter, user avatars, and tags. 
-title: Collection-list
-description: List of collections with metadata, search bar, filter, user avatars, and tags. 
+layout: tasks-status
+template-title: Tasks status
+template-description: Collection of tasks with search bar, filter, metadata, user avatars, and tag features. 
+title: Tasks
+description: Collection of tasks with search bar, filter, metadata, user avatars, and tag features. 
 source-domain: PRP intake questionnaire
 source-url: http://cbprs.org/wp-content/uploads/2020/08/PRP-Intake-Questionnaire.pdf
 figma:
