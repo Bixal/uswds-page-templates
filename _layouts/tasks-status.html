@@ -42,7 +42,7 @@
 		{% for info in page.collection  %}
 		<li class="usa-collection__item maxw-full"></li>
 		<div class="grid-row grid-gap">
-			<div class="grid-col-6">
+			<div class="grid-col-5">
 				<div class="usa-collection__body">
 			      <h3 class="usa-collection__heading">
 			        <a class="usa-link" href="javascript:void(0)">{{ info.title }}</a>
@@ -60,11 +60,13 @@
 			</div>
 			<div class="grid-col">
 				<div class="display-flex flex-column flex-align-center">
-				  <img class="circle-6" style="width: 50px;height: 50px;" src="{{ info.image-source }}" alt="{{ value.alt-text }}">
+				  <img class="circle-6" style="width: 40px;height: 40px;" src="{{ info.image-source }}" alt="{{ value.alt-text }}">
 				</div>
 			</div>
-			<div class="grid-col">
-				<span class="usa-tag text-base-darkest {{ info.status-color }}">{{ info.status }}</span>
+			<div class="grid-col-4">
+				<div class="display-flex flex-column flex-align-center">
+					<span class="usa-tag text-base-darkest {{ info.status-color }}">{{ info.status }}</span>
+				</div>
 			</div>
 		</div>
 		{% endfor %}
