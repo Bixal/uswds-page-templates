@@ -1,0 +1,85 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+  {% include header-extended.html %}
+
+	<main id="main-content">
+	<section class="bg-primary-darker usa-section">
+	  <div class="grid-container margin-y-5">
+	    <div class="tablet:grid-col-9">
+	      <h1 class="text-base-lightest">Adobe Inc.</h1>
+	      <p class="usa-intro text-base-lightest">Started on 10/11/2021</p>
+	    </div>
+	  </div>
+	</section>
+
+	<div class="grid-container margin-y-5">
+	{% include breadcrumb.html %}
+		<h2>Privacy Recognition for Processors (PRP) System</h2>
+		<p>In order to be certified as a PRP, you need to satisfy all of the requirements. For each requirement, submit proper evidence or responses. If you have questions, please reach out to your assigned Certifying Agent.</p>
+		<h2 class="border-bottom-05 border-primary padding-bottom-1">Requirements</h2>
+		<div class="grid-row margin-bottom-5">
+			<div class="tablet:grid-col-8">
+			<section aria-label="Default search component">
+			  <form class="usa-search" role="search">
+			    <label class="usa-sr-only" for="search-field-search-field"> Search </label>
+			    <input
+			      class="usa-input"
+			      id="search-field-search-field"
+			      type="search"
+			      name="search"
+			    />
+			    <button class="usa-button" type="submit">
+			      <span class="usa-search__submit-text">Search</span>
+			    </button>
+			  </form>
+			</section>
+			</div>
+			<div class="tablet:grid-col-4">
+				<!-- <label class="usa-label" for="options"></label> -->
+				<select class="usa-select margin-top-neg-05" name="options" id="options">
+				  <option value>- Status -</option>
+				  <option value="value1">Revision Needed</option>
+				  <option value="value2">Ready for Review</option>
+				  <option value="value3">Not Started</option>
+				  <option value="value4">Approved</option>
+				  <option value="value4">Completed</option>
+				</select>
+			</div>
+		</div>
+		{% for info in page.collection  %}
+		<li class="usa-collection__item maxw-full"></li>
+		<div class="grid-row grid-gap">
+			<div class="grid-col-6">
+				<div class="usa-collection__body">
+			      <h3 class="usa-collection__heading">
+			        <a class="usa-link" href="javascript:void(0)">{{ info.title }}</a>
+			      </h3>
+			      <p class="usa-collection__description">
+			      </p>
+			      <ul class="usa-collection__meta" aria-label="More information">
+			      	{% for data in info.items %}
+			        <li class="usa-collection__meta-item">
+			          {{ data }}
+			        </li>
+			        {% endfor %}
+			      </ul>
+			    </div>
+			</div>
+			<div class="grid-col">
+				<div class="display-flex flex-column flex-align-center">
+				  <img class="circle-6" style="width: 50px;height: 50px;" src="{{ info.image-source }}" alt="{{ value.alt-text }}">
+				</div>
+			</div>
+			<div class="grid-col">
+				<span class="usa-tag text-base-darkest {{ info.status-color }}">{{ info.status }}</span>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	</main>
+
+  		{% include footer.html %}
+  		{% include foot.html %}	}
