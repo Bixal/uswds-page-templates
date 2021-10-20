@@ -1,7 +1,7 @@
 ---
 layout: collection-list
 template-title: Collection list
-template-description: List of collection with metadata, search bar, filter, user profiles, and tags. 
+template-description: List of collection with metadata, search bar, filter, user avatars, and tags. 
 title: Requirements
 description: In order to be certified as a PRP, you need to satisfy all of the requirements. For each requirement, submit proper evidence or responses. If you have questions, please reach out to your assigned Certifying Agent. 
 source-domain: PRP intake questionnaire
