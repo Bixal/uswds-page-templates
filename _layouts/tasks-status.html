@@ -1,0 +1,86 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+  {% include header-extended.html %}
+
+	<main id="main-content">
+
+	<div class="grid-container margin-bottom-5">
+	{% include breadcrumb.html %}
+		<h1 class="border-bottom-05 border-primary padding-bottom-1">{{ page.title }}</h1>
+		<div class="grid-row margin-bottom-3">
+			<div class="tablet:grid-col-8 margin-bottom-3 padding-right-1">
+			<section aria-label="Default search component">
+			  <form class="usa-search" role="search">
+			    <label class="usa-sr-only" for="search-field-search-field"> Search </label>
+			    <input
+			      class="usa-input"
+			      id="search-field-search-field"
+			      type="search"
+			      name="search"
+			    />
+			    <button class="usa-button" type="submit">
+			      <span class="usa-search__submit-text">Search</span>
+			    </button>
+			  </form>
+			</section>
+			</div>
+			<div class="tablet:grid-col-4">
+				<!-- <label class="usa-label" for="options"></label> -->
+				<select class="usa-select margin-top-neg-05" name="options" id="options">
+				  <option value>- Status -</option>
+				  <option value="value3">Not Started</option>
+				  <option value="value4">Ready for Review</option>
+				  <option value="value5">Revision Needed</option>
+				  <option value="value1">Approved</option>
+				  <option value="value2">Completed</option>
+				</select>
+			</div>
+		</div>
+		{% for info in page.collection  %}
+		<li class="usa-collection__item maxw-full"></li>
+		<div class="grid-row grid-gap">
+			<div class="grid-col-5">
+				<div class="usa-collection__body">
+			      <h3 class="usa-collection__heading">
+			        <a class="usa-link" href="javascript:void(0)">{{ info.title }}</a>
+			      </h3>
+			      <p class="usa-collection__description">
+			      </p>
+			      <ul class="usa-collection__meta" aria-label="More information">
+			      	{% for data in info.items %}
+			        <li class="usa-collection__meta-item">
+			          {{ data }}
+			        </li>
+			        {% endfor %}
+			      </ul>
+			    </div>
+			</div>
+			<div class="grid-col">
+				<div class="display-flex flex-column flex-align-center">
+				  <img class="circle-6" style="width: 40px;height: 40px;" src="{{ info.image-source }}" alt="{{ value.alt-text }}">
+				</div>
+			</div>
+			<div class="grid-col-4">
+				{% if info.status == "Not Started" %}
+					<span class="usa-tag text-base-darkest bg-primary-lighter">Not Started</span>
+				{% elsif info.status == "Ready for Review" %}
+					<span class="usa-tag text-base-darkest bg-accent-warm-light">Ready for Review</span>
+				{% elsif info.status == "Revision Needed" %}
+					<span class="usa-tag text-base-darkest bg-error-light">Revision Needed</span>
+				{% elsif info.status == "Approved" %}
+					<span class="usa-tag text-base-darkest bg-success-light">Approved</span>
+				{% elsif info.status == "Completed" %}
+					<span class="usa-tag text-base-darkest bg-info-light">Completed</span>
+				{% endif %}
+			</div>
+		</div>
+		{% endfor %}
+		<p class="margin-top-4">Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</a></p>
+	</div>
+	</main>
+
+  		{% include footer.html %}
+  		{% include foot.html %}	}
