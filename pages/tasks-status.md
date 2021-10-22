@@ -6,7 +6,7 @@ title: Tasks
 description: Collection of tasks with search bar, filter, metadata, user avatars, and tag features. 
 source-domain: PRP intake questionnaire
 source-url: http://cbprs.org/wp-content/uploads/2020/08/PRP-Intake-Questionnaire.pdf
-figma:
+figma: https://www.figma.com/file/QVPduB8h6DIENYULFVCism/Bixal---USWDS-Page-Templates?node-id=1757%3A7804
 collection:
    - title: "1: Implement an information security policy"
      items:
