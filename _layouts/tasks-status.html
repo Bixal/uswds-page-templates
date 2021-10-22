@@ -69,12 +69,12 @@
 				{% elsif info.status == "Ready for Review" %}
 					<span class="usa-tag text-base-darkest bg-accent-warm-light">Ready for Review</span>
 				{% elsif info.status == "Revision Needed" %}
-					<span class="usa-tag text-base-darkest bg-secondary-light">Revision Needed</span>
+					<span class="usa-tag text-base-darkest bg-error-light">Revision Needed</span>
 				{% elsif info.status == "Approved" %}
-					<span class="usa-tag text-base-darkest bg-mint">Approved</span>
+					<span class="usa-tag text-base-darkest bg-success-light">Approved</span>
 				{% elsif info.status == "Completed" %}
-					<span class="usa-tag text-base-darkest bg-accent-cool-light">Completed</span>
-				{% endif %}				
+					<span class="usa-tag text-base-darkest bg-info-light">Completed</span>
+				{% endif %}
 			</div>
 		</div>
 		{% endfor %}
