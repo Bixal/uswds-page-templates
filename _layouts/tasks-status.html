@@ -31,11 +31,11 @@
 				<!-- <label class="usa-label" for="options"></label> -->
 				<select class="usa-select margin-top-neg-05" name="options" id="options">
 				  <option value>- Status -</option>
-				  <option value="value1">Approved</option>
-				  <option value="value2">Completed</option>
 				  <option value="value3">Not Started</option>
 				  <option value="value4">Ready for Review</option>
 				  <option value="value5">Revision Needed</option>
+				  <option value="value1">Approved</option>
+				  <option value="value2">Completed</option>
 				</select>
 			</div>
 		</div>
@@ -64,19 +64,17 @@
 				</div>
 			</div>
 			<div class="grid-col-4">
-				<div class="display-flex flex-column flex-align-center">
-					{% if info.status == "Approved" %}
-						<span class="usa-tag text-base-darkest bg-mint">Approved</span>
-					{% elsif info.status == "Completed" %}
-						<span class="usa-tag text-base-darkest bg-accent-cool-light">Completed</span>
-					{% elsif info.status == "Not Started" %}
-						<span class="usa-tag text-base-darkest bg-primary-lighter">Not Started</span>
-					{% elsif info.status == "Ready for Review" %}
-						<span class="usa-tag text-base-darkest bg-accent-warm-light">Ready for Review</span>
-					{% elsif info.status == "Revision Needed" %}
-						<span class="usa-tag text-base-darkest bg-secondary-light">Revision Needed</span>
-					{% endif %}
-				</div>
+				{% if info.status == "Not Started" %}
+					<span class="usa-tag text-base-darkest bg-primary-lighter">Not Started</span>
+				{% elsif info.status == "Ready for Review" %}
+					<span class="usa-tag text-base-darkest bg-accent-warm-light">Ready for Review</span>
+				{% elsif info.status == "Revision Needed" %}
+					<span class="usa-tag text-base-darkest bg-secondary-light">Revision Needed</span>
+				{% elsif info.status == "Approved" %}
+					<span class="usa-tag text-base-darkest bg-mint">Approved</span>
+				{% elsif info.status == "Completed" %}
+					<span class="usa-tag text-base-darkest bg-accent-cool-light">Completed</span>
+				{% endif %}				
 			</div>
 		</div>
 		{% endfor %}
