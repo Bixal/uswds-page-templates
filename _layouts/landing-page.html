@@ -44,20 +44,22 @@
               <div class="usa-media-block tablet:grid-col">
                 <img
                   class="usa-media-block__img"
-                  src="/assets/img/circle-124.png"
+                  src="{{ item.card-image }}"
                   alt=""
                 />
                 <div class="usa-media-block__body">
                   <h2 class="usa-graphic-list__heading">
-                    {{ item.title }}
+                    {{ item.card-title }}
                   </h2>
                   <p>
-                    {{ item.subtitle }}
+                    {{ item.card-subtitle }}
                   </p>
                 </div>
               </div>
               {% endfor %}
-              <div class="usa-media-block tablet:grid-col">
+            </div>
+              
+              <!-- <div class="usa-media-block tablet:grid-col">
                 <img
                   class="usa-media-block__img"
                   src="/assets/img/circle-124.png"
@@ -109,10 +111,10 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </section>
 
-        <section id="test-section-id" class="usa-section">
+        <!-- <section id="test-section-id" class="usa-section">
           <div class="grid-container">
             <h2 class="font-heading-xl margin-y-0">Section heading</h2>
             <p class="usa-intro">
@@ -127,7 +129,7 @@
               <p>Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</a></p>
           </div>
         </section>
-      </main>
+      </main> -->
 
     {% include footer.html %}
     {% include foot.html %}
