@@ -1,0 +1,29 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+    {% include header-extended.html %}
+
+    <main id="main-content">
+        <div class="grid-container padding-y-2">
+            <h1>{{ page.title }}</h1>
+            {{ content }}
+            <div class="usa-accordion usa-accordion--bordered">
+                {% for ssa-faq in site.ssa-faqs %}
+                <h2 class="usa-accordion__heading">
+                    <button class="usa-accordion__button" aria-expanded="false" aria-controls="ssafaq{{ forloop.index }}">
+                        {{ ssa-faq.question }}
+                    </button>
+                </h2>
+                <div id="ssafaq{{ forloop.index }}" class="usa-accordion__content">
+                    {{ ssa-faq.content | markdownify }}
+                </div>
+                {% endfor %}
+            </div>
+            <p>Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</a></p>
+        </div>
+    </main>
+
+    {% include footer.html %}
+    {% include foot.html %}
