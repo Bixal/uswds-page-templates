@@ -27,7 +27,14 @@
     <div class="usa-card__container">
         <header class="usa-card__header">
           <h2 class="usa-card__heading">{{ article.title }}</h2>
-</li>
+    </header>
+    <div class="usa-card__media usa-card__media--inset">
+        <div class="usa-card__img bg-white">
+            <img src="{{ article.image }}" alt="Logo for {{ service.name }}"> 
+        </div>
+    </div>
+    </div>
+        </li>
 {% endfor %}
 </ul>
  </div>
