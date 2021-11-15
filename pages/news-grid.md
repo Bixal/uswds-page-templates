@@ -12,6 +12,7 @@ articles:
   - name: Moving land permits online
   - description: Using prototypes and modular contracting to help the Forest Service buy and develop an online permitting system.
   - source: U.S. FOREST SERVICE
+  -image: 
 ---
 
 These are the most common questions we receive through our various customer support channels. If you don’t see what you’re looking for here, please [contact us](https://www.ssa.gov/agency/contact/){: .usa-link}.
