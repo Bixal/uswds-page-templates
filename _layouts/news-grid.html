@@ -45,6 +45,7 @@
   {% for article in page.articles %}
     <div class="usa-card__container">
       <header class="usa-card__header">
+        <h6 class="text-base-dark">{{ article.source }}</h6>
         <h2 class="usa-card__heading">{{ article.title }}</h2>
       </header>
       <div class="usa-card__media">
@@ -57,13 +58,11 @@
       </div>
       <div class="usa-card__body">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
-          tenetur quo cupiditate, eaque qui officia recusandae. Excepturi nobis
-          dolores molestias! Quas quisquam a officia eos.
+          {{ article.description }}
         </p>
       </div>
       <div class="usa-card__footer">
-        <button class="usa-button">Visit Florida Keys</button>
+        <a class="usa-link">{{ article.link }}</a>
       </div>
     </div>
     {% endfor %}

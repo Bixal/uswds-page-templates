@@ -9,8 +9,14 @@ source-domain: 18f.gsa.gov
 source-url: https://18f.gsa.gov/what-we-deliver/
 figma: https://www.figma.com/file/QVPduB8h6DIENYULFVCism/?node-id=1803%3A6488
 articles:
-  - name: Moving land permits online
+  - title: Moving land permits online
     description: Using prototypes and modular contracting to help the Forest Service buy and develop an online permitting system.
     source: U.S. FOREST SERVICE
+    link: Read More
+    image:
+  - title:
+    description:
+    source:
+    link:
     image:
 ---
