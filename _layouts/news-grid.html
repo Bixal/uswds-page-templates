@@ -6,7 +6,8 @@
     {% include header-extended.html %}
 
     <main id="main-content">
-        <section class="usa-card__header bg-blue-80v">
+       
+      <!-- <section class="usa-card__header bg-blue-80v">
             <div class="grid-container">
                 <h1 class="font-heading-3xl text-accent-cool">{{ page.title }}</h1>
                 <h2 class="font-alt-xl text-base-lightest">{{ page.description }}</h2>
@@ -37,11 +38,14 @@
         </li>
 {% endfor %}
 </ul>
- </div>
+ </div> -->
+ 
+ <section class="grid-container">
  <li class="tablet:grid-col-4 usa-card">
+  {% for article in page.articles %}
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h2 class="usa-card__heading">Card with media</h2>
+        <h2 class="usa-card__heading">{{ article.title }}</h2>
       </header>
       <div class="usa-card__media">
         <div class="usa-card__img">
@@ -62,8 +66,9 @@
         <button class="usa-button">Visit Florida Keys</button>
       </div>
     </div>
+    {% endfor %}
   </li>
-
+</section>
 
 
     
