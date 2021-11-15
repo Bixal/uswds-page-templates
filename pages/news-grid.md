@@ -10,13 +10,13 @@ source-url: https://18f.gsa.gov/what-we-deliver/
 figma: https://www.figma.com/file/QVPduB8h6DIENYULFVCism/?node-id=1803%3A6488
 articles:
   - title: Moving land permits online
-    description: Using prototypes and modular contracting to help the Forest Service buy and develop an online permitting system.
+    description: Using prototypes and modular contracting to help the Forest Service buy and develop an online permitting system
     source: U.S. FOREST SERVICE
     link: Read More
     link-source: https://18f.gsa.gov/what-we-deliver/forest-service/
     image:
   - title: Modernizing access to healthcare
-    description: Introducing modern digital methods to the State of Alaska’s eligibility system modernization project.
+    description: Introducing modern digital methods to the State of Alaska’s eligibility system modernization project
     source: ALASKA DEPARTMENT OF HEALTH AND SOCIAL SERVICES
     link: Read More
     link-source: https://18f.gsa.gov/what-we-deliver/alaska-dhss/
@@ -26,5 +26,23 @@ articles:
     source: DEPARTMENT OF JUSTICE
     link: Read More
     link-source: https://18f.gsa.gov/what-we-deliver/doj-crt/
+    image:
+  - title: Making it easier to resolve tax disputes
+    description: Developing a new petition and document-filing experience for taxpayers without lawyers, and a better case management workflow for Tax Court employees
+    source: U.S. TAX COURT
+    link: Read More
+    link-source: https://18f.gsa.gov/what-we-deliver/tax-court/
+    image:
+  - title: Implementing a government-wide law
+    description: Implementing the Digital Accountability and Transparency Act with one of the largest government-wide agile projects ever undertaken
+    source: DEPARTMENT OF THE TREASURY
+    link: Read More
+    link-source: https://18f.gsa.gov/what-we-deliver/data-act/
+    image:
+  - title: Fitting our analysis to your challenge
+    description: Leveraging our technical expertise with USKPA's program knowledge to improve the tracking of rough diamonds
+    source: DEPARTMENT OF STATE
+    link: Read More
+    link-source: https://18f.gsa.gov/what-we-deliver/state-uskpa/
     image:
 ---
