@@ -1,0 +1,39 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+    {% include header-extended.html %}
+    <main id="main-content">
+        <img src="{{ page.hero-image }}" alt="{{ page.hero-image-alt }}" class="width-full">
+        <div class="grid-container">
+            <div class="grid-row grid-gap flex-align-start">
+                <div class="desktop:grid-col-3 tablet:order-{{ page.side-menu-order }} margin-y-3 position-sticky top-105">
+                    <nav aria-label="Secondary navigation,">
+                        <ul class="usa-sidenav">
+                            {% for item in page.side-menu %}
+                            <li class="usa-sidenav__item">
+                                <a href="#{{ item.id }}" class="{% if item.name == item.id %}usa-current{% endif %}">{{ item.name }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+                <div class="desktop:grid-col-9">
+                    <h1 class="font-heading-2xl">{{ page.title }}</h1>
+                    <p>{{ page.byline }}</p>
+                    <p>{{ page.dateline }}</p>
+                    <p>
+                        {% for item in page.labels %}
+                        <span class="usa-tag text-no-wrap">{{ item.name }}</span>
+                        {% endfor %}
+                    </p>
+                    {{ content }}
+                    <p>Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include footer.html %}
+    {% include foot.html %}
