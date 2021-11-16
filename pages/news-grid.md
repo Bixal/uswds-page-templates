@@ -14,19 +14,22 @@ articles:
     source: U.S. FOREST SERVICE
     link: Read More
     link-source: https://18f.gsa.gov/what-we-deliver/forest-service/
-    image:
+    image-source: https://github.com/Bixal/rrt-content/blob/main/assets/img/xmas-tree-permit.png?raw=true
+    image-alt: Buy a christmas tree permit photo
   - title: Modernizing access to healthcare
     description: Introducing modern digital methods to the State of Alaska’s eligibility system modernization project
     source: ALASKA DEPARTMENT OF HEALTH AND SOCIAL SERVICES
     link: Read More
     link-source: https://18f.gsa.gov/what-we-deliver/alaska-dhss/
-    image:
+    image-source: https://github.com/Bixal/rrt-content/blob/main/assets/img/alaska-flag.png?raw=true
+    image-alt: Alaska flag
   - title: Improving access to justice through a user-friendly online submission experience
     description: Developing a user-friendly online submission experience for the civil rights complaint portal
     source: DEPARTMENT OF JUSTICE
     link: Read More
     link-source: https://18f.gsa.gov/what-we-deliver/doj-crt/
-    image:
+    image-source: https://github.com/Bixal/rrt-content/blob/main/assets/img/doj-crt-complaint-form.png?raw=true
+    image-alt: complaint form screens
   - title: Making it easier to resolve tax disputes
     description: Developing a new petition and document-filing experience for taxpayers without lawyers, and a better case management workflow for Tax Court employees
     source: U.S. TAX COURT
@@ -44,5 +47,5 @@ articles:
     source: DEPARTMENT OF STATE
     link: Read More
     link-source: https://18f.gsa.gov/what-we-deliver/state-uskpa/
-    image:
+    image-source:
 ---
