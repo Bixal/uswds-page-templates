@@ -35,17 +35,20 @@ articles:
     source: U.S. TAX COURT
     link: Read More
     link-source: https://18f.gsa.gov/what-we-deliver/tax-court/
-    image:
+    image-source: https://github.com/Bixal/rrt-content/blob/main/assets/img/ustc-header-image.png?raw=true
+    image-alt: tax dispute screens
   - title: Implementing a government-wide law
     description: Implementing the Digital Accountability and Transparency Act with one of the largest government-wide agile projects ever undertaken
     source: DEPARTMENT OF THE TREASURY
     link: Read More
     link-source: https://18f.gsa.gov/what-we-deliver/data-act/
-    image:
+    image-source: https://github.com/Bixal/rrt-content/blob/main/assets/img/data-act-better-data.jpeg?raw=true
+    image-alt: better data logo
   - title: Fitting our analysis to your challenge
     description: Leveraging our technical expertise with USKPA's program knowledge to improve the tracking of rough diamonds
     source: DEPARTMENT OF STATE
     link: Read More
     link-source: https://18f.gsa.gov/what-we-deliver/state-uskpa/
-    image-source:
+    image-source: https://github.com/Bixal/rrt-content/blob/main/assets/img/uskpa.png?raw=true
+    image-alt: screenshot of USKPA.org
 ---
