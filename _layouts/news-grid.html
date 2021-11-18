@@ -33,9 +33,10 @@
       </header>
       <div class="usa-card__media">
         <div class="usa-card__img">
-          <img class="minh-card"
+          <img
             src="{{ article.image-source }}"
             alt="{{ article.image-alt }}"
+            class="minh-card maxh-card"
           />
         </div>
       </div>
@@ -51,6 +52,7 @@
   </li>
   {% endfor %}
   </ul>
+  <p>For all press inquiries, please contact <a href="{{ page.contact-email }}" class="usa-link"></p>
   </div>
   <p>Source: <a href="{{ page.source-url }}" class="usa-link">{{ page.source-domain }}</p>
 </section>

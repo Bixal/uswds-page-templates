@@ -5,6 +5,7 @@ template-description: Card-based layout that displays recent news articles or ca
 title: News
 description: Card-based layout that displays recent news articles or case studies
 intro: 18F partners with federal agencies to improve the user experience of government services by helping them build and buy technology. If you're looking to implement a requirement, update a public-facing website, or digitize a process, 18F can work with you to build a product or craft and execute an effective agile acquisition strategy.
+contact-email:
 source-domain: 18f.gsa.gov
 source-url: https://18f.gsa.gov/what-we-deliver/
 figma: https://www.figma.com/file/QVPduB8h6DIENYULFVCism/?node-id=1803%3A6488
