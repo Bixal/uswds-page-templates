@@ -10,7 +10,7 @@ labels:
     - name: Data access
     - name: User-centered design
     - name: Agile
-side-menu-order: last #first for a left side menu or last for a right side menu
+side-menu-position: first #first for a left side menu or last for a right side menu
 side-menu:
     - name: Understand the problem
       id: understand-the-problem

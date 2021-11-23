@@ -8,7 +8,7 @@
         <img src="{{ page.hero-image }}" alt="{{ page.hero-image-alt }}" class="width-full">
         <div class="grid-container">
             <div class="grid-row grid-gap flex-align-start">           
-                <div class="desktop:grid-col-3 tablet:order-{{ page.side-menu-order }} margin-y-3 position-sticky top-1">
+                <div class="desktop:grid-col-3 tablet:order-{{ page.side-menu-position }} margin-y-3 position-sticky top-0 bg-white z-top shadow-1">
                     <nav aria-label="Secondary navigation,">
                         <ul class="usa-sidenav">
                             {% for item in page.side-menu %}
